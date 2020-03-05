@@ -1,3 +1,4 @@
+//object creation with braces
 const obj = {
 id:1,
 Fname:'Vijay',
@@ -86,3 +87,28 @@ salary=obj.getSalary();
  obj.setExperience(4);
 experience=obj.getExperience();
  console.log('Experience',experience);
+
+ const obj1={
+id:1,
+Fname:'Vijay',
+Lname:'Sekar',
+role:'UI DEVELOPER',
+salary:1000,
+experience:3
+ }
+ console.log(obj1)
+
+ function Person(id){
+   let _id=id;
+   this.name='hi';
+   this.setId=function(id) {
+     _id=id;
+   }
+   this.getId=function(){
+     return _id;
+   }
+ }
+ const person =new Person('10');
+ person.setId(2)
+ console.log(person.getId())
+ 
